@@ -10,7 +10,12 @@ img {
 	flex-direction: column;
 }
 
+.top {
+	min-height: 50%;
+}
+
 .bottom {
 	display: flex;
+	flex-direction: column;
 }
 
