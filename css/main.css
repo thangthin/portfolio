@@ -38,7 +38,7 @@ body a {
   #background {
     width: 100%;
     height: 380px;
-    background-image: url(../images/background/book_stacks_small.jpg);
+    background-image: url(../images/background/book_stacks_small-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,7 +70,7 @@ body a {
   #background {
     width: 100%;
     height: 480px;
-    background-image: url(../images/background/book_stacks_medium.jpg);
+    background-image: url(../images/background/book_stacks_medium-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -102,7 +102,7 @@ body a {
   }
   #background {
     position: fixed;
-    background-image: url(../images/background/book_stacks_grey.jpg);
+    background-image: url(../images/background/book_stacks_grey-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
