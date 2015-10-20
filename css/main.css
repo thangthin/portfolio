@@ -20,6 +20,7 @@ body a {
 .bottom-flex-box {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .nav-flex-box {
@@ -73,6 +74,11 @@ body a {
     .bottom-flex-item {
         align-self: center;
         text-align: center;
+    }
+    .nav-flex-box {
+    	flex-direction: row;
+    	justify-content: space-around;
+    	width: 30%;
     }
 }
 
