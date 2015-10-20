@@ -1,21 +1,111 @@
+/*body*/
 
-/*The main content css*/
-img {
-  display: block;
-  width: 100%;
+body {
+    color: #520E0E;
+    font-family: ‘Book Antiqua’, Palatino, serif;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
+body a {
+	color: #0D4F75;
+	text-decoration: none;
 }
 
-.top {
-	min-height: 50%;
+/*layout*/
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.bottom {
-	display: flex;
-	flex-direction: column;
+.bottom-flex-box {
+    display: flex;
+    flex-direction: column;
 }
 
+.nav-flex-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+	text-align: center;
+	margin-top: 5%;
+}
+
+@media (max-width: 480px) {
+    #background {
+        width: 100%;
+        height: 380px;
+        background-image: url(../images/background/book_stacks_small.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bottom-flex-item {
+        align-self: center;
+        text-align: center;
+    }
+
+    /*test*/
+/*
+    .b-flex-item-1 {
+        background-color: red;
+    }
+    .b-flex-item-2 {
+        background-color: grey;
+    }
+		.c-flex-item-3 {
+				background-color: navy;
+		} 
+*/
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #background {
+        width: 100%;
+        height: 480px;
+        background-image: url(../images/background/book_stacks_medium.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bottom-flex-item {
+        align-self: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-flex-box {
+        flex-direction: row;
+    }
+    .flex-container {
+        display: block;
+    }
+    #background {
+        position: fixed;
+        background-image: url(../images/background/book_stacks_grey.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    #content {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        right: 0;
+        text-align: right;
+    }
+    .bottom-flex-item {
+        align-self: flex-end;
+    }
+    .b-flex-item-1 {
+        background-color: red;
+    }
+    .b-flex-item-2 {
+        background-color: grey;
+    }
+}

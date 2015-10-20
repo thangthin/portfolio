@@ -3,26 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Name's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="top">
-            <img src="./images/book_stacks_grey.jpg" srcset="./images/book_indoor.jpg 460w, ./images/book_stacks_grey.jpg 960w" alt="study with open book">
+    <div class="flex-container">
+        <div id="background" class="top container-flex-item c-flex-item-1">
         </div>
-        <div class="bottom">
-            <div>
+        <div class="contact container-flex-item c-flex-item-3">
+            <a href="#"><i class="fa fa-github-square fa-lg"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+        </div>
+        <div id="content" class="container-flex-item c-flex-item-2 bottom-flex-box">
+            <div class="bottom-flex-item b-flex-item-1">
                 <h1>Developer Name</h1>
                 <h2>Description</h2>
                 <h3>detailed description</h3>
             </div>
-            <nav class="nav-box">
-                <div><a href="#">About</a></div>
-                <div><a href="#">Work</a></div>
-                <div><a href="#">Blog</a></div>
+            <nav class="bottom-flex-item b-flex-item-2 nav-flex-box">
+                <div class="nav-flex-item"><a href="#">About</a></div>
+                <div class="nav-flex-item"><a href="#">Work</a></div>
+                <div class="nav-flex-item"><a href="#">Blog</a></div>
             </nav>
         </div>
     </div>
