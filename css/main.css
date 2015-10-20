@@ -22,6 +22,7 @@ body a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 2%;
 }
 
 .nav-flex-box {
@@ -125,16 +126,15 @@ body a {
   }
   .bottom-flex-item {
     align-self: flex-end;
+    margin-right: 2%;
   }
   .b-flex-item-1 {
     order: 1;
   }
   .b-flex-item-2 {
     order: 2;
-    margin-right: 2%;
   }
   .b-flex-item-3 {
     order: 3;
-    margin-right: 2%;
   }
 }
