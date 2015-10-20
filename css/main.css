@@ -31,6 +31,7 @@ body a {
 
 #contact {
   margin-top: 2%;
+  display: flex;
 }
 
 @media (max-width: 480px) {
@@ -49,7 +50,6 @@ body a {
   #contact {
     text-align: center;
     width: 30%;
-    display: flex;
     justify-content: space-between;
   }
   /*test*/
@@ -87,14 +87,18 @@ body a {
   #contact {
     text-align: center;
     width: 30%;
-    display: flex;
     justify-content: space-around;
   }
 }
 
 @media (min-width: 769px) {
   .nav-flex-box {
-    flex-direction: row;
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-around;
+  }
+  .bottom-flex-box {
+    justify-content: space-around;
   }
   #background {
     position: fixed;
@@ -113,18 +117,24 @@ body a {
     text-align: right;
   }
   #contact {
-    position: relative;
+    flex-direction: column;
     width: 50%;
-    height: 10%;
+    height: 25%;
     right: 0;
+    justify-content: space-around;
   }
   .bottom-flex-item {
     align-self: flex-end;
   }
   .b-flex-item-1 {
-    background-color: red;
+    order: 1;
   }
   .b-flex-item-2 {
-    background-color: grey;
+    order: 2;
+    margin-right: 2%;
+  }
+  .b-flex-item-3 {
+    order: 3;
+    margin-right: 2%;
   }
 }
