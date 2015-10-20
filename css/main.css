@@ -1,117 +1,130 @@
 /*body*/
 
 body {
-    color: #520E0E;
-    font-family: ‘Book Antiqua’, Palatino, serif;
+  color: #520E0E;
+  font-family: ‘Book Antiqua’, Palatino, serif;
 }
 
 body a {
-	color: #0D4F75;
-	text-decoration: none;
+  color: #0D4F75;
+  text-decoration: none;
 }
+
 
 /*layout*/
 
 .flex-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .bottom-flex-box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .nav-flex-box {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact {
-	text-align: center;
-	margin-top: 5%;
+#contact {
+  margin-top: 2%;
 }
 
 @media (max-width: 480px) {
-    #background {
-        width: 100%;
-        height: 380px;
-        background-image: url(../images/background/book_stacks_small.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .bottom-flex-item {
-        align-self: center;
-        text-align: center;
-    }
-
-    /*test*/
-/*
+  #background {
+    width: 100%;
+    height: 380px;
+    background-image: url(../images/background/book_stacks_small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bottom-flex-item {
+    align-self: center;
+    text-align: center;
+  }
+  #contact {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  /*test*/
+  /*
     .b-flex-item-1 {
         background-color: red;
     }
     .b-flex-item-2 {
         background-color: grey;
     }
-		.c-flex-item-3 {
-				background-color: navy;
-		} 
+    .c-flex-item-3 {
+        background-color: navy;
+    } 
 */
-    
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    #background {
-        width: 100%;
-        height: 480px;
-        background-image: url(../images/background/book_stacks_medium.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .bottom-flex-item {
-        align-self: center;
-        text-align: center;
-    }
-    .nav-flex-box {
-    	flex-direction: row;
-    	justify-content: space-around;
-    	width: 30%;
-    }
+  #background {
+    width: 100%;
+    height: 480px;
+    background-image: url(../images/background/book_stacks_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .bottom-flex-item {
+    align-self: center;
+    text-align: center;
+  }
+  .nav-flex-box {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+  }
+  #contact {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 769px) {
-    .nav-flex-box {
-        flex-direction: row;
-    }
-    .flex-container {
-        display: block;
-    }
-    #background {
-        position: fixed;
-        background-image: url(../images/background/book_stacks_grey.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-    }
-    #content {
-        position: absolute;
-        width: 50%;
-        height: 50%;
-        right: 0;
-        text-align: right;
-    }
-    .bottom-flex-item {
-        align-self: flex-end;
-    }
-    .b-flex-item-1 {
-        background-color: red;
-    }
-    .b-flex-item-2 {
-        background-color: grey;
-    }
+  .nav-flex-box {
+    flex-direction: row;
+  }
+  #background {
+    position: fixed;
+    background-image: url(../images/background/book_stacks_grey.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #content {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0;
+    text-align: right;
+  }
+  #contact {
+    position: relative;
+    width: 50%;
+    height: 10%;
+    right: 0;
+  }
+  .bottom-flex-item {
+    align-self: flex-end;
+  }
+  .b-flex-item-1 {
+    background-color: red;
+  }
+  .b-flex-item-2 {
+    background-color: grey;
+  }
 }
