@@ -16,6 +16,8 @@ body a {
 .flex-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 
 .bottom-flex-box {
@@ -38,7 +40,7 @@ body a {
 @media (max-width: 480px) {
   #background {
     width: 100%;
-    height: 380px;
+    height: 60%;
     background-image: url(../images/background/book_stacks_small-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -47,6 +49,13 @@ body a {
   .bottom-flex-item {
     align-self: center;
     text-align: center;
+  }
+  .bottom-flex-box {
+  	widht: 100%;
+  	height: 40%;
+  }
+  .nav-flex-item {
+  	margin-bottom: 10%;
   }
   #contact {
     text-align: center;
@@ -70,7 +79,7 @@ body a {
 @media (min-width: 481px) and (max-width: 768px) {
   #background {
     width: 100%;
-    height: 480px;
+    height: 60%;
     background-image: url(../images/background/book_stacks_medium-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -79,6 +88,19 @@ body a {
   .bottom-flex-item {
     align-self: center;
     text-align: center;
+  }
+  .bottom-flex-item-1{
+    height: 50%;
+  }
+  .bottom-flex-item-2{
+    height: 40%;
+  }
+  .bottom-flex-item-3{
+    height: 10%;
+  }
+  .bottom-flex-box {
+  	height: 40%;
+  	width: 100%;
   }
   .nav-flex-box {
     flex-direction: row;
